@@ -1,13 +1,13 @@
 function somar(a,b){
-    return a + b;
+    
+    const result = a + b;
+
+    if(result > 10){
+        return result * 10;
+    }
+    else{
+        return result;
+    }
 }
 
-function subtrair(c,d){
-    return c - d;
-}
-
-function multiplicar(e,f){
-    return e * f;
-}
-
-module.exports = somar, subtrair, multiplicar;
+module.exports = somar;
