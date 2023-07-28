@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "calculate.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
