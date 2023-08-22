@@ -1,5 +1,4 @@
 1. Aplicar um teste unitário: Aplicar com e sem o coverage, analisar o arquivo .html com as linhas retornadas.
 
-2. Construir os testes unitários : Deverá ser construídos testes para serem concluídos com 100% de assertividade, precisará interpretar as funções construídas em: multiply.js, division.js.
-
-5.  Ferramentas utilizadas: Jest
+2. Construir os testes unitários : Deverá ser construídos testes para serem concluídos
+com 100% de assertividade, precisará interpretar as funções construídas em: multiply.js, division.js.
