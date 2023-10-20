@@ -1,11 +1,37 @@
-describe("Testando os Matchers", () => {
-  it("Deve fazer se o resultado é igual o calculo", () => {
-    const result = 8 + 4;
-    expectToBe(result, 8);
-  });
+const matcher = require("./matcher");
 
-  it("Deve testar se o resultado é maior", () => {
-    const result = 10;
-    expectToBeGreaterThan(result, 5);
-  });
+const {
+  toBe,
+  toBeGreaterThan,
+  toBeGreaterThanOrEqual,
+  toBeLessThan,
+  toBeLessThanOrEqual,
+  toBeCloseTo,
+  toContain,
+  toThrow,
+  toBeNull,
+  toBeDefined,
+  toBeUndefined,
+  toCustomToMatch,
+  toBeTruthy,
+  toBeFalsy,
+} = matcher;
+
+test("Testes", () => {
+  toBe(5, 5);
+  toBeGreaterThan(10, 5);
+  toBeGreaterThanOrEqual(10, 10);
+  toBeLessThan(2, 4);
+  toBeLessThanOrEqual(7, 7);
+  toBeCloseTo(0.1 + 0.2, 0.3, 2);
+  toContain("Olá Mundo", "Mundo");
+  toThrow(() => {
+    throw new Error("Erro");
+  }, Error);
+  toBeNull(null);
+  toBeDefined(5);
+  toBeUndefined(undefined);
+  toCustomToMatch("Jere", /Souza/);
+  toBeTruthy(true);
+  toBeFalsy(false);
 });

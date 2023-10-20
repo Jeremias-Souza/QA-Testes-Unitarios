@@ -2,11 +2,11 @@ function ToBe(valorAtual, valorEsperado) {
   expect(valorAtual).toBe(valorEsperado);
 }
 
-function ToBeGreaterThanOrEqual(valorAtual, valorEsperado) {
+function ToBeGreaterThanOrEqualThan(valorAtual, valorEsperado) {
   expect(valorAtual).toBeGreaterThan(valorEsperado);
 }
 
-function ToBeGreaterThanOrEqual(valorAtual, valorEsperado) {
+function ToBeGreaterThanOrEqualThanOrEqual(valorAtual, valorEsperado) {
   expect(valorAtual).toBeGreaterThanOrEqual(valorEsperado);
 }
 
@@ -52,4 +52,17 @@ function expectToBeFalsy(valorAtual) {
 
 function expectToThrow(func, msgError) {
   expect(func).toThrow(msgError);
+}
+
+function expectToBeLessThan(valorAtual, valorEsperado) {
+  expect(valorAtual).toBeLessThan(valorEsperado);
+}
+
+// Matcher: toBeLessThanOrEqual
+function expectToBeLessThanOrEqual(valorAtual, valorEsperado) {
+  expect(valorAtual).toBeLessThanOrEqual(valorEsperado);
+}
+
+function expectToBeCloseTo(valorAtual, valorEsperado, valorPrecisao) {
+  expect(valorAtual).toBeCloseTo(valorEsperado, valorPrecisao);
 }
